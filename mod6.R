@@ -5,7 +5,7 @@ air <- data.frame(airquality)
 air$Ozone[is.na(air$Ozone)] <- mean(air$Ozone, na.rm = TRUE)
 air$Solar.R[is.na(air$Solar.R)] <- mean(air$Solar.R, na.rm = TRUE)
 head(air)
-#only selecting only the first 25 values to make it a bit easier to manage
+#selecting only the first 25 values to make it a bit easier to manage
 air25 <- air[1:25,]
 air25
 #changing the last two columns to date format
@@ -17,7 +17,7 @@ air25
 #melting data together for my bar graph
 melt_air25 <- melt(air25, id = "Date")
 print(melt_air25)
-
+#creating the stacked bar graph
 ggplot(melt_air25, aes(fill = variable, y = value, x = Date)) +
   geom_bar(position = "stack", stat = "identity") +
   ggtitle("Air Quality Stats For May") +
