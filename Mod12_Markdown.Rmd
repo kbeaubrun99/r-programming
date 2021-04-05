@@ -1,0 +1,51 @@
+---
+title: "GGplot2 Visualization Practice"
+output: html_document
+---
+
+---
+## R Markdown
+This Markdown file will be used to create simple ggplot visualizations. This includes: scatterplots, bar graphs, and line graphs
+---
+
+```{r setup, message = FALSE}
+#Add any packages needed here
+#ex: library(...)
+
+
+```
+
+## Loading Data
+Load your data here:
+
+```{r, "Step 1"}
+#Add any data that will be used here
+
+
+```
+
+## Scatterplot
+Create your scatterplot here:
+
+```{r, "Step 2"}
+#hint: ggplot(....) +
+#geom_point()
+
+
+```
+
+## Bar Graph
+Create your bar graph here:
+```{r, "Step 3}
+#hint: ggplot(....) +
+#geom_bar()
+
+```
+
+## Line Graph
+Create your line graph here:
+```{r, "Step 4"}
+#hint: gglot(....) +
+#geom_line()
+
+```
